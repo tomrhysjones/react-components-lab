@@ -1,16 +1,37 @@
-# React + Vite
+# React Components Lab – Weather Forecast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+In this lab, you build a weather forecast page that **re-uses a single React component** to display multiple days’ worth of weather forecasts. The goal is to practice component reuse, props, and dynamically generating content in React.
 
-Currently, two official plugins are available:
+Only two components are required:
+- `src/App.jsx`
+- `src/components/WeatherForecast/WeatherForecast.jsx`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`App` acts as the root component, while `WeatherForecast` is used inside `App` to generate a list of forecasts.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Component Hierarchy
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## Weather Data
+Weather data is defined in `App.jsx` as an array of objects. Each object contains:
+- `day`
+- `img`
+- `imgAlt`
+- `conditions`
+- `time`
+
+The data is mapped over to render multiple `WeatherForecast` components.
+
+---
+
+## JSX Structure
+Each `WeatherForecast` component renders the JSX equivalent of the following structure:
+
+## Screenshots
+
+Screenshot 2026-02-05 at 06.46.22

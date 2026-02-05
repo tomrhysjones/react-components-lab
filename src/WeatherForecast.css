@@ -1,0 +1,31 @@
+section {
+  display: flex;
+}
+
+section .weather {
+  border: 1px solid #ccc;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.weather span {
+  font-weight: bold;
+}
+
+.weather img {
+  width: 50px;
+}
+.weather .temp {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.weather .condition {
+  font-size: 1.2em;
+  color: #555;
+}
+.weather .date {
+  font-size: 0.9em;
+  color: #888;
+}
+/* End of src/WeatherForecast.css */
